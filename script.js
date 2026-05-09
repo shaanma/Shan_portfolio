@@ -203,13 +203,26 @@ document.querySelector('.nav-cta').addEventListener('click', (e) => {
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    contactForm.style.display = 'none';
-    formSuccess.style.display = 'block';
-    // Reset form after 3 seconds
-    setTimeout(() => {
-        contactForm.reset();
-        contactForm.style.display = 'flex';
-        formSuccess.style.display = 'none';
-        closeContactModal();
-    }, 3000);
+    
+    const formData = new FormData(contactForm);
+    const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdaaJrVr3dij-eK0YumccPOFTxDrGte2ROC8Ofk661YKobxSg/formResponse';
+
+    fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+    }).then(() => {
+        contactForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+        // Reset form after 3 seconds
+        setTimeout(() => {
+            contactForm.reset();
+            contactForm.style.display = 'flex';
+            formSuccess.style.display = 'none';
+            closeContactModal();
+        }, 3000);
+    }).catch(error => {
+        console.error('Error submitting form:', error);
+        alert('There was an error sending your message. Please try again or contact me directly via email.');
+    });
 });
