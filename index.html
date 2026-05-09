@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shan MohammedIsmail Asoora — Infrastructure Architect specializing in Hybrid Cloud, SRE & Data Protection with 20 years of experience.">
+    <title>Shan MA | Infrastructure Architect — Hybrid Cloud, SRE & Data Protection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Shan<span class="accent">.</span>MA</a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#competencies" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">20+ Years of Excellence</div>
+            <h1 class="hero-title">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name">Shan MohammedIsmail<br>Asoora</span>
+            </h1>
+            <p class="hero-subtitle">Infrastructure Architect</p>
+            <p class="hero-tagline">Hybrid Cloud &bull; SRE &bull; Data Protection</p>
+            <p class="hero-tagline">Enabling business outcomes through enterprise datacenter transformation</p>
+            <div class="hero-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Bengaluru, India
+            </div>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary" onclick="openContactModal(event)">Get in Touch</a>
+                <a href="#experience" class="btn btn-outline">View Experience</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Professional Summary</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Senior IT Infrastructure and Cloud Architect with <strong>20 years of experience</strong>
+                        designing, building, and operating enterprise-grade, mission-critical hybrid cloud, datacenter,
+                        and data protection platforms.</p>
+                    <p>Proven expertise in cloud adoption, SRE, DevSecOps practices, automation, observability, and
+                        cyber-resilient architectures. Strong people and stakeholder leader with extensive experience
+                        leading global technical teams, managing KPIs, vendors, and large-scale transformation programs
+                        aligned to business outcomes.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="75">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">RTO Reduction</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Manual Tasks Reduced</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-suffix"></span>
+                        <span class="stat-label">Fortune 500 Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="competencies" class="section competencies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Core Competencies</h2>
+            </div>
+            <div class="competency-grid">
+                <div class="competency-card">
+                    <div class="competency-icon">🏗️</div>
+                    <h3>Infrastructure Architecture</h3>
+                    <p>On-prem & hybrid designs, HA/DR patterns, AI Infrastructure</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">☁️</div>
+                    <h3>Hybrid Cloud & DC Ops</h3>
+                    <p>Private cloud, virtualization, Kubernetes/OpenShift</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">⚙️</div>
+                    <h3>SRE & DevSecOps</h3>
+                    <p>SLOs, error budgets, automation, CI/CD pipelines</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">🤖</div>
+                    <h3>Automation & Orchestration</h3>
+                    <p>Process reduction, runbooks, SOPs</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">📋</div>
+                    <h3>ITSM & Governance</h3>
+                    <p>ITIL, ServiceNow, operational excellence</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">🤝</div>
+                    <h3>Vendor & Stakeholder Mgmt</h3>
+                    <p>LOE, cost estimation, SLA oversight</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">🔒</div>
+                    <h3>Security & Compliance</h3>
+                    <p>Resilience, recovery objectives, risk mitigation</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">💾</div>
+                    <h3>Data Protection & Cyber Recovery</h3>
+                    <p>Networker, Avamar, Data Domain, PPDM, NetBackup</p>
+                </div>
+                <div class="competency-card">
+                    <div class="competency-icon">📊</div>
+                    <h3>Observability & Performance</h3>
+                    <p>Capacity planning, monitoring, performance management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Career Path</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- Dell Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Senior Principal Site Reliability Engineer</h3>
+                                <p class="timeline-company">Dell Technologies</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2011 – Present</span>
+                                <span class="timeline-location">Bangalore, India / Michigan, USA</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led cross‑functional engagements, solution architects and engineering to design custom
+                                AI Infrastructure, storage, backup, and recovery solutions for Fortune 500 clients.</li>
+                            <li>Defined and tracked KPIs and operational SLOs; implemented automation initiatives that
+                                reduced manual activities by ~30%.</li>
+                            <li>Designed and implemented cyber recovery solutions that improved resilience and reduced
+                                RTO by ~75%.</li>
+                            <li>Planned and executed datacentre migrations with minimal downtime and zero data loss.
+                            </li>
+                            <li>Developed technical presentations, SOPs, and runbooks; acted as centre of excellence for
+                                storage/backup technologies.</li>
+                            <li>Worked with Kubernetes/OpenShift, virtualization, and container orchestration for modern
+                                workloads.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wipro -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Senior Engineer – Application Management</h3>
+                                <p class="timeline-company">Wipro Infotech</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Dec 2010 – Aug 2011</span>
+                                <span class="timeline-location">Pune, India / Ratingen, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed and operationalized Backup-as-a-Service (BaaS); developed SOPs and maintained
+                                knowledge repositories.</li>
+                            <li>Performed capacity analysis and management for storage/backup; optimized configurations
+                                for performance and availability.</li>
+                            <li>Led onsite knowledge transition; enabled seamless adoption of processes and best
+                                practices across teams.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- HCL -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Senior Analyst – Systems</h3>
+                                <p class="timeline-company">HCL Technologies</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Sep 2008 – Dec 2010</span>
+                                <span class="timeline-location">Chennai, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Administered storage and backup environments (DellEMC, NetApp); performed health checks,
+                                SAN zoning, and DR replication.</li>
+                            <li>Led storage migration from HP EVA to EMC CLARiiON and backup tool migration from HP Data
+                                Protector to EMC Networker.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Early Career -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Technical Support Executive</h3>
+                                <p class="timeline-company">Sutherland Global Services &amp; Reliance Infocomm</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2006 – Aug 2008</span>
+                                <span class="timeline-location">Chennai, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Early career roles providing technical support and building foundational IT
+                                infrastructure skills.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Credentials</span>
+                <h2 class="section-title">Certifications & Training</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">✅</div>
+                    <h3>ITIL V3</h3>
+                    <p>Reg No. 4388151</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🐧</div>
+                    <h3>RedHat Certified Engineer (RHCE)</h3>
+                    <p>Certificate No. 805009082738595</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">💾</div>
+                    <h3>Backup Recovery Networker Specialist (EMCSA)</h3>
+                    <p>Reg No. 264479096</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🗄️</div>
+                    <h3>Information Storage Management (ISM)</h3>
+                    <p>Reg No. 246236890</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">☸️</div>
+                    <h3>RedHat OpenShift | Kubernetes | VMware</h3>
+                    <p>Platform & Orchestration Training</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🖥️</div>
+                    <h3>IBM Storage Scale (GPFS)</h3>
+                    <p>Advanced Implementation Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="edu-list-container">
+                <ul class="edu-bullet-list">
+                    <li>
+                        <span class="edu-year-tag">2019</span>
+                        <strong>TechEdge – Executive Program on Technical Leadership</strong> — IIM Bangalore (IIMB)
+                    </li>
+                    <li>
+                        <span class="edu-year-tag">2005</span>
+                        <strong>Diploma in Electronics Engineering</strong> — 3 Years Full Time
+                    </li>
+                    <li>
+                        <span class="edu-year-tag">2002</span>
+                        <strong>Plus Two – Computer Science</strong> — 2 Years Full Time
+                    </li>
+                    <li>
+                        <span class="edu-year-tag">2000</span>
+                        <strong>SSLC</strong> — Secondary School Leaving Certificate
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Client Engagements -->
+    <section id="clients" class="section clients">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Key Client Engagements & Project Experience</h2>
+            </div>
+            <div class="client-grid">
+                <div class="client-card">
+                    <div class="client-logo">Continental</div>
+                    <h3>Continental Tech</h3>
+                    <p>HPC infrastructure management for AI operations and enterprise AI‑as‑a‑Service delivery.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">Stellantis</div>
+                    <h3>Stellantis</h3>
+                    <p>Storage and data protection architect, pre‑sales solution design, and transformation initiatives
+                        across enterprise IT platforms.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">GM</div>
+                    <h3>General Motors</h3>
+                    <p>Enterprise storage and datacenter infrastructure operations.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">Vodafone</div>
+                    <h3>Vodafone IT</h3>
+                    <p>Datacenter infrastructure operations, and transformation initiatives across enterprise IT
+                        platforms.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">SanDisk</div>
+                    <h3>SanDisk</h3>
+                    <p>Storage and data protection operational support for customer IT environments.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-logo">Broadcom</div>
+                    <h3>Avago Technologies (Now Broadcom)</h3>
+                    <p>Infrastructure operations and transformation projects supporting business‑critical environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-grid contact-grid-3">
+                <a href="mailto:shan.ma@ymail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>shan.ma@ymail.com</p>
+                </a>
+                <a href="tel:+919900030253" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p>+91-99000 30253</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">🌍</div>
+                    <h3>Location</h3>
+                    <p>Bengaluru, India</p>
+                </div>
+            </div>
+            <div class="interests">
+                <h3>Interests</h3>
+                <div class="interest-tags">
+                    <span class="tag">Emerging Technologies</span>
+                    <span class="tag">Electronics</span>
+                    <span class="tag">Automotive Industry</span>
+                    <span class="tag">Sports & Games</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shan MohammedIsmail Asoora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <h2 class="modal-title">Send a Message</h2>
+            <p class="modal-subtitle">Fill in the form below and I'll get back to you shortly.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="form-name">Name</label>
+                    <input type="text" id="form-name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-email">Email</label>
+                    <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-description">Description</label>
+                    <textarea id="form-description" name="description" rows="5" placeholder="How can I help you?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </form>
+            <div id="form-success" class="form-success" style="display:none;">
+                <div class="success-icon">✅</div>
+                <h3>Message Sent!</h3>
+                <p>Thank you for reaching out. I'll get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
