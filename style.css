@@ -157,6 +157,24 @@ img { max-width: 100%; display: block; }
     text-align: center;
     padding: 0 24px;
 }
+.profile-photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 32px;
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--gradient-accent);
+    position: relative;
+    animation: fadeInDown 0.8s ease-out;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--bg-primary);
+}
 .hero-badge {
     display: inline-block;
     padding: 6px 20px;
