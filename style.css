@@ -155,11 +155,11 @@ img { max-width: 100%; display: block; }
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 0 24px;
+    padding: 100px 24px 40px;
 }
 .profile-photo-container {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto 32px;
     border-radius: 50%;
     padding: 5px;
@@ -167,6 +167,11 @@ img { max-width: 100%; display: block; }
     position: relative;
     animation: fadeInDown 0.8s ease-out;
     box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+    transition: var(--transition);
+}
+.profile-photo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.5);
 }
 .profile-photo {
     width: 100%;
@@ -962,4 +967,8 @@ a.contact-card:hover {
     .stat-number { font-size: 2.5rem; }
     .hero-badge { font-size: 0.7rem; padding: 5px 16px; }
     .section-title { font-size: 1.8rem; }
+    .profile-photo-container {
+        width: 140px;
+        height: 140px;
+    }
 }
